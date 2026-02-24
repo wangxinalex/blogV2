@@ -7,7 +7,7 @@ categories: Redis
 
 ## Simple Dynamic String (SDS)
 
-```C
+```c
 struct sdshdr {
     int len;
     int free;
@@ -21,7 +21,7 @@ Uses `len` instead of `\0` to judge the endig of a string.
 
 ## Linked List
 
-```C
+```c
 typedef struct listNode {
     struct listNode* prev;
     struct listNode* next;
@@ -29,7 +29,7 @@ typedef struct listNode {
 }listNode;
 ```
 
-```C
+```c
 typedef struct list{
     listNode* head;
     listNode* tail;
